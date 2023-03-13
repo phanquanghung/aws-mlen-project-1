@@ -25,11 +25,11 @@ Given more time, I would spend more time on the feature engineering. I think tha
 The hyperparameter tuning is also important but with the current result, I think that spending more time on this part is not sensible.
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
-|model|auto_stack|num_bag_sets|num_stack_levels|score|
+|model|auto_stack|hyperparameter_tune_kwargs|hyperparameters|score|
 |--|--|--|--|--|
-|initial|False|1|0|1.78625|
-|add_features|False|1|0|0.53720|
-|hpo|True|15|2|0.51730|
+|initial|False|None|default|1.78625|
+|add_features|False|None|default|0.53720|
+|hpo|True|auto|'RF', 'XT', 'GBM', 'CAT', 'XGB', 'FASTAI'|0.50924|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
